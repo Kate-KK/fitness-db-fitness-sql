@@ -188,11 +188,6 @@ GRANT SELECT, INSERT, UPDATE ON fitness_network.* TO 'fitness_manager'@'localhos
 GRANT SELECT ON fitness_network.* TO 'fitness_analyst'@'localhost';
 GRANT ALL PRIVILEGES ON fitness_network.* TO 'fitness_admin'@'localhost';
 
-FLUSH PRIVILEGES;
-
-DESCRIBE clients;
-DESCRIBE classes;
-DESCRIBE visits;
 
 SELECT c.full_name, s.expiration_date, s.status
 FROM clients c, subscriptions s
